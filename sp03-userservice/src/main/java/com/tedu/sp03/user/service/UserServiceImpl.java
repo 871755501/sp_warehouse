@@ -13,11 +13,15 @@ import com.tedu.sp01.web.util.JsonUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ *	只有添加了@RefreshScope 注解Bean, 实例
+ *	才会被重新注入到新的配置数据
+ */
 @Slf4j
 @Service
 @RefreshScope
 public class UserServiceImpl implements UserService{
-
+	//测试yml配置的测试用户数据,
 	@Value("${sp.user-service.users}")
 	private String userJson;
 	
