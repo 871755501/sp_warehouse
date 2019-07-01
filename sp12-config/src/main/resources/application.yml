@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/871755501/sp_warehouse.git
-          searchPaths: config
+          searchPaths: 
   rabbitmq:
     host: 192.168.177.128
     port: 5672
