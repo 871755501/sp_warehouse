@@ -12,6 +12,8 @@ spring:
     port: 5672
     username: admin
     password: admin
+  profiles:
+    active: native
 server:
   port: 6001
 eureka:
